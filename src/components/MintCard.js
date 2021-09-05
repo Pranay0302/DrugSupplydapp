@@ -48,9 +48,6 @@ export default function OutlinedCard() {
                     <Button size="small" variant="outlined">
                         Commence
                     </Button>
-                    <Button size="small" variant="outlined">
-                        Learn More
-                    </Button>
                 </div>
             </CardActions>
         </Card>

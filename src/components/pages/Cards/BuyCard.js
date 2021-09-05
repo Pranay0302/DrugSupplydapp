@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import TextField from '@material-ui/core/TextField'
-import '../styles/App.css'
+import '../../../styles/App.css'
 
 const useStyles = makeStyles({
     root: {
@@ -19,6 +19,10 @@ const useStyles = makeStyles({
     },
 
     title: {
+        fontSize: 15,
+        margin: 12,
+    },
+    pos: {
         fontSize: 15,
         margin: 12,
     },
@@ -35,18 +39,18 @@ export default function OutlinedCard() {
                     color="textSecondary"
                     gutterBottom
                 >
-                    Mint Drug
+                    Buy Drug
                 </Typography>
                 <TextField label="UPC" variant="outlined" />
                 <Typography className={classes.title} color="textSecondary">
-                    Enter Price
+                    Pay
                 </Typography>
                 <TextField label="Price" variant="outlined" />
             </CardContent>
             <CardActions>
                 <div>
                     <Button size="small" variant="outlined">
-                        Commence
+                        Buy
                     </Button>
                 </div>
             </CardActions>

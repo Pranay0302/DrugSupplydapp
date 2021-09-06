@@ -47,8 +47,9 @@ a:link {
     height: 150px;
 }
 
-a {
-    margin: 30px;
+.EE a {
+    text-decoration: none;
+    cursor: default
 }
 
 @media only screen and (max-width: 768px) {

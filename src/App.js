@@ -35,7 +35,23 @@ function App() {
                                 <div className="AppHeader">
                                     DRUG SUPPLY CHAIN
                                 </div>
-                                <h5>Power of Decentralization</h5>
+                                <Button
+                                    className="EE"
+                                    style={{
+                                        backgroundColor: 'transparent',
+                                        cursor: 'default',
+                                    }}
+                                >
+                                    {' '}
+                                    <a
+                                        target="_blank"
+                                        href="https://ethereum.org/en/"
+                                        rel="noreferrer"
+                                    >
+                                        {' '}
+                                        Decentralization
+                                    </a>
+                                </Button>
                                 <div className="CardSection">
                                     <Card />
                                     <BuyCard />

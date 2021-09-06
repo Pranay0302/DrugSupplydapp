@@ -2,6 +2,7 @@
 
 import { injected } from './Connectors'
 import { useWeb3React } from '@web3-react/core'
+import '../../../styles/App.css'
 
 export default function MetaInt() {
     const { active, account, activate, deactivate } = useWeb3React()
@@ -23,14 +24,14 @@ export default function MetaInt() {
     }
 
     return (
-        <div className="flex flex-col items-center justify-center">
+        <div className="MMbuttonSec">
             <button onClick={connect}>Connect to MetaMask</button>
             {active ? (
-                <span>
+                <h6>
                     Connected with <b>{account}</b>
-                </span>
+                </h6>
             ) : (
-                <span>Not connected</span>
+                <h6>Not connected</h6>
             )}
             <button onClick={disconnect}>Disconnect</button>
         </div>

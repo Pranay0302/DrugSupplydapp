@@ -92,7 +92,7 @@ export default function Learn() {
                     </AccordionDetails>
                 </Accordion>
                 <Link to="/">
-                    <Button className="homeButton" variant="outlined">
+                    <Button variant="outlined" style={{ margin: '20px' }}>
                         home
                     </Button>
                 </Link>

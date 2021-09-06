@@ -8,6 +8,10 @@ import Typography from '@material-ui/core/Typography'
 import TextField from '@material-ui/core/TextField'
 import '../../../styles/App.css'
 
+import { Web3ReactProvider } from '@web3-react/core'
+import Web3 from 'web3'
+import MetaInt from '../Wallet/MetaInt'
+
 const useStyles = makeStyles({
     root: {
         minWidth: 275,
@@ -31,6 +35,12 @@ const useStyles = makeStyles({
 export default function OutlinedCard() {
     const classes = useStyles()
 
+    function getLibrary(provider) {
+        return new Web3(provider)
+    }
+    function MMconnect() {
+        console.log('connected to MetaMask')
+    }
     return (
         <Card className={classes.root} variant="outlined">
             <CardContent>
@@ -55,8 +65,11 @@ export default function OutlinedCard() {
             </CardContent>
             <CardActions>
                 <div>
-                    <Button size="small" variant="outlined">
-                        Buy
+                    <Button onClick={MMconnect} size="small" variant="outlined">
+                        <Web3ReactProvider getLibrary={getLibrary}>
+                            {' '}
+                            <MetaInt />
+                        </Web3ReactProvider>
                     </Button>
                 </div>
             </CardActions>

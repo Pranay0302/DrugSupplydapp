@@ -11,11 +11,11 @@ import { Button } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        width: '100%',
         textAlign: 'center',
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
         justifyContent: 'center',
     },
     heading: {
@@ -46,9 +46,12 @@ export default function Learn() {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse malesuada lacus ex, sit amet
-                            blandit leo lobortis eget.
+                            Minting or producing a drug deals with the approval
+                            of CDER; Once the drug is approved and accepted, The
+                            user can mint the drug. The supply chain is tracked
+                            efficiently using this blockchain technology. Enter
+                            the UPC (Universal Product Code) of the drug and{' '}
+                            <strong>click</strong> on <em>commence</em>
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -64,9 +67,9 @@ export default function Learn() {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse malesuada lacus ex, sit amet
-                            blandit leo lobortis eget.
+                            The User can buy the drug if he/she has the UPC code
+                            of the product, The user can click on the{' '}
+                            <em>pay</em> for further proceedings
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -82,16 +85,16 @@ export default function Learn() {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse malesuada lacus ex, sit amet
-                            blandit leo lobortis eget.
+                            The User can sell the drug if he/she has the UPC
+                            code of the product and with the amount. The user
+                            can click on the <em>sell</em> the product.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
                 <Link to="/">
-                    <div className="learnButton">
-                        <Button variant="outlined">home</Button>
-                    </div>
+                    <Button className="homeButton" variant="outlined">
+                        home
+                    </Button>
                 </Link>
             </div>
         </React.Fragment>

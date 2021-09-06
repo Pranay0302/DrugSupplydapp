@@ -47,6 +47,10 @@ a:link {
     height: 150px;
 }
 
+a {
+    margin: 30px;
+}
+
 @media only screen and (max-width: 768px) {
     .App {
         margin: 20px;

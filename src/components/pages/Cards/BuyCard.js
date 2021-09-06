@@ -43,9 +43,15 @@ export default function OutlinedCard() {
                 </Typography>
                 <TextField label="UPC" variant="outlined" />
                 <Typography className={classes.title} color="textSecondary">
-                    Pay
+                    Payment Details
                 </Typography>
-                <TextField label="Price" variant="outlined" />
+                <Typography className={classes.pos} color="textSecondary">
+                    {' '}
+                    For further details, <strong>click</strong> on learn more.{' '}
+                    <br />
+                    You'll be redirected to your{' '}
+                    <strong>MetaMask Wallet</strong>
+                </Typography>
             </CardContent>
             <CardActions>
                 <div>
